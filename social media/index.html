@@ -51,8 +51,8 @@
                     <a class="menu-item">
                         <span><i class="fas fa-compass"></i><h3>Explore</h3></span>
                     </a>
-                    <a class="menu-item">
-                        <span><i class="fas fa-bell"></i><h3>Notifications</h3></span>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="fas fa-bell"><small class="notification-count">9+</small></i><h3>Notifications</h3></span>
                         <!-- ----notification popup--- -->
                         <div class="notifications-popup">
                             <div>
@@ -123,8 +123,8 @@
                             </div>
                         </div>
                     </a>
-                    <a class="menu-item">
-                        <span><i class="fas fa-envelope"></i><h3>Messages</h3></span>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="fas fa-envelope"><small class="notification-count">6</small></i><h3>Messages</h3></span>
                     </a>
                     <a class="menu-item">
                         <span><i class="fas fa-bookmark"></i><h3>Bookmarks</h3></span>
@@ -139,14 +139,509 @@
                         <span><i class="fas fa-cog"></i><h3>Settings</h3></span>
                     </a>
                 </div>
+                <!-- ----end of sidebar -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
             </div>
+            <!-- -------end of left------- -->
+
+
 
             <!-- =======middle======= -->
-            <div class="middle"></div>
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-8.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-9.jpg">
+                        </div>
+                        <p class="name">Stephen Curry</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-10.jpg">
+                        </div>
+                        <p class="name">Micheal Jordan</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-11.jpg">
+                        </div>
+                        <p class="name">Kobe Bryant</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-12.jpg">
+                        </div>
+                        <p class="name">Anthony Edwards</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-8.jpg">
+                        </div>
+                        <p class="name">Damian Jones</p>
+                    </div>
+                </div>
+                <!-- ------end of stories---- -->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Diana?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+                <!-- ----feeds---- -->
+                <div class="feeds">
+                    <!-- ----feed 1----- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-13.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Lana Rose</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fas fa-heart"></i></span>
+                                <span><i class="fas fa-comment-dots"></i></span>
+                                <span><i class="fas fa-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fas fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-4.jpg"></span>
+                            <span><img src="images/profile-15.jpg"></span>
+                            <p>Liked by <b>Wemby</b> and <b>2,003 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rose</b> Lorem ipsum dolor sit amet.</p>
+                            <span class="harsh-tag">#lifestyle</span>
+                        </div>
+                        <div class="comments text-muted">View all 159 comments</div>
+                    </div>
+
+                    <!-- ----feed 2----- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-14.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Lucas Don</h3>
+                                    <small>Dubai,1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-2.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fas fa-heart"></i></span>
+                                <span><i class="fas fa-comment-dots"></i></span>
+                                <span><i class="fas fa-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fas fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-4.jpg"></span>
+                            <span><img src="images/profile-15.jpg"></span>
+                            <p>Liked by <b>Davis</b> and <b>4,003 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lucas Don</b> Lorem ipsum dolor sit amet.</p>
+                            <span class="harsh-tag">#basketball</span>
+                        </div>
+                        <div class="comments text-muted">View all 159 comments</div>
+                    </div>
+                    <!-- ----feed 3----- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-15.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Shai Gillia</h3>
+                                    <small>Kumba, JUST NOW</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-3.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fas fa-heart"></i></span>
+                                <span><i class="fas fa-comment-dots"></i></span>
+                                <span><i class="fas fa-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fas fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-1.jpg"></span>
+                            <span><img src="images/profile-2.jpg"></span>
+                            <span><img src="images/profile-3.jpg"></span>
+                            <p>Liked by <b>The_mother</b> and <b>222 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Shai</b> Lorem ipsum dolor sit amet.</p>
+                            <span class="harsh-tag">#music</span>
+                        </div>
+                        <div class="comments text-muted">View all 159 comments</div>
+                    </div>
+                    <!-- ----feed 4----- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-20.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Josse Andre</h3>
+                                    <small>Kambe, 45 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-4.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fas fa-heart"></i></span>
+                                <span><i class="fas fa-comment-dots"></i></span>
+                                <span><i class="fas fa-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fas fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-4.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-6.jpg"></span>
+                            <p>Liked by <b>K. Navas</b> and <b>403 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Josse Adre</b> Lorem ipsum dolor sit amet.</p>
+                            <span class="harsh-tag">#producer</span>
+                        </div>
+                        <div class="comments text-muted">View all 20 comments</div>
+                    </div>
+                    <!-- ----feed 5----- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-19.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>FL Studio</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-5.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fas fa-heart"></i></span>
+                                <span><i class="fas fa-comment-dots"></i></span>
+                                <span><i class="fas fa-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fas fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-7.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <span><img src="images/profile-9.jpg"></span>
+                            <p>Liked by <b>Kevin Durant</b> and <b>2,003,011 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>FL Studio</b> Lorem ipsum dolor sit amet.</p>
+                            <span class="harsh-tag">#game</span>
+                        </div>
+                        <div class="comments text-muted">View all 14,030 comments</div>
+                    </div>
+                    <!-- ----feed 6----- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-17.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Durante Karl</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-6.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fas fa-heart"></i></span>
+                                <span><i class="fas fa-comment-dots"></i></span>
+                                <span><i class="fas fa-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fas fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-11.jpg"></span>
+                            <span><img src="images/profile-12.jpg"></span>
+                            <p>Liked by <b>Victor</b> and <b>20 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Durante Karl Rose</b> Lorem ipsum dolor sit amet.</p>
+                            <span class="harsh-tag">#basketball</span>
+                        </div>
+                        <div class="comments text-muted">View all 2 comments</div>
+                    </div>
+                    <!-- ----feed 7----- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-15.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Allen Iverson</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-7.jpg" alt="">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fas fa-heart"></i></span>
+                                <span><i class="fas fa-comment-dots"></i></span>
+                                <span><i class="fas fa-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fas fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-1.jpg"></span>
+                            <span><img src="images/profile-2.jpg"></span>
+                            <span><img src="images/profile-20.jpg"></span>
+                            <p>Liked by <b>Wemby</b> and <b>2,003 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Allen Iverson</b> Lorem ipsum dolor sit amet.</p>
+                            <span class="harsh-tag">#lifestyle</span>
+                        </div>
+                        <div class="comments text-muted">View all 159 comments</div>
+                    </div>
+                    <!-- -------end of feed------ -->
+                </div>
+                <!-- -------end of feeds------ -->
+            </div>
+            <!-- ------end of middle------ -->
 
             <!-- =========right======== -->
-            <div class="right"></div>
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <!-- ----search-bar---- -->
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="search" placeholder="Search message" id="message-search">
+                    </div>
+                    <!-- ---message category--- -->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <!-- -----message---- -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-17.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Bron James</h5>
+                            <p class="text-muted">Just woke up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-20.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Anthony Edwards</h5>
+                            <p class="text-muted">Need your help dawg</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-19.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Micheal Jordan</h5>
+                            <p class="text-muted">Hooping today right?</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-18.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Victor Wembenyama</h5>
+                            <p class="text-muted">I'mma dunk on y'all</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-16.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Kyrie Irving</h5>
+                            <p class="text-muted">I know i'm small bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-15.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Anthony Davis</h5>
+                            <p class="text-muted">Text wemby now</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----end of messgaes--- -->
+
+                <!-- -----friend requests---- -->
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-13.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajia Bintu</h5>
+                                <p class="text-muted">2 mutual friends</p> 
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-12.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajia Bintu</h5>
+                                <p class="text-muted">8 mutual friends</p> 
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-11.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajia Bintu</h5>
+                                <p class="text-muted">1 mutual friend</p> 
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =======end of right==== -->
         </div>
     </main>
+
+    
 </body>
 </html>
